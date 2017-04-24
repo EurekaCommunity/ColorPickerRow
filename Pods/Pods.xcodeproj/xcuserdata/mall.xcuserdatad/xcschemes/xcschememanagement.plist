@@ -9,7 +9,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-EurekaCustomView.xcscheme</key>
+		<key>Pods-ColorPicker.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>UIColor_Hex_Swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>367775726ABA7003552CA455107C1627</key>
+		<key>55E638B3DA03140DB07C21B898DCDE8C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5BD51B98C61CDB0747EB5A12F075CB3A</key>
+		<key>675A114988AE198732ED4AD726408964</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A2D176D8EAA436134D74FD03DE7400C4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

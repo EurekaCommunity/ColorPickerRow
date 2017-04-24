@@ -1,8 +1,10 @@
 PODS:
-  - Eureka (2.0.0-beta.1)
+  - Eureka (3.0.0)
+  - UIColor_Hex_Swift (3.0.2)
 
 DEPENDENCIES:
   - Eureka (from `https://github.com/xmartlabs/Eureka.git`, branch `master`)
+  - UIColor_Hex_Swift (~> 3.0.2)
 
 EXTERNAL SOURCES:
   Eureka:
@@ -11,12 +13,13 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Eureka:
-    :commit: 72a975a031063e67f69e3a775b8bf61d0acc8c6a
+    :commit: cd0a057a2612286340e5b7f8ba5d06e6fcd4e2bd
     :git: https://github.com/xmartlabs/Eureka.git
 
 SPEC CHECKSUMS:
-  Eureka: d014adf16406745e1a78d5790ea37ed130a0a8e5
+  Eureka: 5b9418d7bfdc21ca977d69d124a6409f3e9af2c7
+  UIColor_Hex_Swift: 95f718452092a3efc8a827dffd2c04d3237be02d
 
-PODFILE CHECKSUM: 0d1aa7c724d7e9b29e9858b35d477828e95b3717
+PODFILE CHECKSUM: 827697672d723669446437018e4af97c23ddc779
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.2.0

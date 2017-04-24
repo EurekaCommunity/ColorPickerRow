@@ -1,8 +1,8 @@
 {
   "name": "Eureka",
-  "version": "2.0.0-beta.1",
+  "version": "3.0.0",
   "license": "MIT",
-  "summary": "Elegant iOS Forms in pure Swift 2",
+  "summary": "Elegant iOS Forms in pure Swift",
   "homepage": "https://github.com/xmartlabs/Eureka",
   "social_media_url": "http://twitter.com/xmartlabs",
   "authors": {
@@ -11,7 +11,7 @@
   },
   "source": {
     "git": "https://github.com/xmartlabs/Eureka.git",
-    "tag": "2.0.0-beta.1"
+    "tag": "3.0.0"
   },
   "platforms": {
     "ios": "8.0"
