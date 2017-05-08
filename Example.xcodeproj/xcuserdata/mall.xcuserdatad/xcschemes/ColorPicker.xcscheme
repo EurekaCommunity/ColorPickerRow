@@ -35,7 +35,7 @@
             BlueprintIdentifier = "A56E45541DF6534B0094372A"
             BuildableName = "ColorPicker.app"
             BlueprintName = "ColorPicker"
-            ReferencedContainer = "container:ColorPicker.xcodeproj">
+            ReferencedContainer = "container:Example.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,7 +58,7 @@
             BlueprintIdentifier = "A56E45541DF6534B0094372A"
             BuildableName = "ColorPicker.app"
             BlueprintName = "ColorPicker"
-            ReferencedContainer = "container:ColorPicker.xcodeproj">
+            ReferencedContainer = "container:Example.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>

@@ -13,13 +13,13 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Eureka:
-    :commit: cd0a057a2612286340e5b7f8ba5d06e6fcd4e2bd
+    :commit: 77cb04f587a4e83f28ad5f3174f6f8f6c086b524
     :git: https://github.com/xmartlabs/Eureka.git
 
 SPEC CHECKSUMS:
   Eureka: 5b9418d7bfdc21ca977d69d124a6409f3e9af2c7
   UIColor_Hex_Swift: 95f718452092a3efc8a827dffd2c04d3237be02d
 
-PODFILE CHECKSUM: 827697672d723669446437018e4af97c23ddc779
+PODFILE CHECKSUM: af7f6296626bb44cb5f6bedfacf378f45aa2c098
 
 COCOAPODS: 1.2.0

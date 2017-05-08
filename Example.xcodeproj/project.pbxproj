@@ -78,7 +78,8 @@
 		A56E454C1DF6534B0094372A = {
 			isa = PBXGroup;
 			children = (
-				A56E45571DF6534B0094372A /* ColorPicker */,
+				A56E45571DF6534B0094372A /* Example */,
+				A55B414F1EAC0D2B001D90D5 /* ColorPicker */,
 				A56E45561DF6534B0094372A /* Products */,
 				8D7FBB7AF833D701E8A74D21 /* Pods */,
 				D5ACA5023157ABC028F6326A /* Frameworks */,
@@ -93,18 +94,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A56E45571DF6534B0094372A /* ColorPicker */ = {
+		A56E45571DF6534B0094372A /* Example */ = {
 			isa = PBXGroup;
 			children = (
 				A56E45581DF6534B0094372A /* AppDelegate.swift */,
 				A56E455A1DF6534B0094372A /* ViewController.swift */,
-				A55B414F1EAC0D2B001D90D5 /* ColorPicker */,
 				A56E455C1DF6534B0094372A /* Main.storyboard */,
 				A56E455F1DF6534B0094372A /* Assets.xcassets */,
 				A56E45611DF6534B0094372A /* LaunchScreen.storyboard */,
 				A56E45641DF6534B0094372A /* Info.plist */,
 			);
-			path = ColorPicker;
+			path = Example;
 			sourceTree = "<group>";
 		};
 		D5ACA5023157ABC028F6326A /* Frameworks */ = {
@@ -150,13 +150,12 @@
 				TargetAttributes = {
 					A56E45541DF6534B0094372A = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = Z7S6X96M3X;
 						LastSwiftMigration = 0810;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
-			buildConfigurationList = A56E45501DF6534B0094372A /* Build configuration list for PBXProject "ColorPicker" */;
+			buildConfigurationList = A56E45501DF6534B0094372A /* Build configuration list for PBXProject "Example" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -313,7 +312,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -358,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -373,11 +372,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Z7S6X96M3X;
-				INFOPLIST_FILE = ColorPicker/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.latenightsw.EurekaCustomView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -388,11 +389,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Z7S6X96M3X;
-				INFOPLIST_FILE = ColorPicker/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.latenightsw.EurekaCustomView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -400,7 +403,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A56E45501DF6534B0094372A /* Build configuration list for PBXProject "ColorPicker" */ = {
+		A56E45501DF6534B0094372A /* Build configuration list for PBXProject "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A56E45651DF6534B0094372A /* Debug */,
