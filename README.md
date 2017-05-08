@@ -74,7 +74,8 @@ _CocoaPods support is forthcoming_
 
 ### Manual
 
-Copy the `ColorPicker` directory into your application.
+1. Add `pod 'UIColor_Hex_Swift', '~> 3.0.2'` to your Podfile
+2. Copy the `ColorPicker` directory into your application.
 
 ## ColorPickerRow Customization
 
