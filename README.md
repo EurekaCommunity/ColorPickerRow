@@ -70,7 +70,7 @@ If you use **ColorPickerRow** in your app I would love to hear about it! Drop me
 
 ## Installation
 
-_CocoaPods support is forethcoming_
+_CocoaPods support is forthcoming_
 
 ### Manual
 
@@ -80,7 +80,7 @@ Copy the `ColorPicker` directory into your application.
 
 - `isCircular` allows you to choose between circular and rounded square color swatches.
 
-- `showsCurrentSwatch` determins if the row displays a swatch to the right of the row title showing the currently selected color.
+- `showsCurrentSwatch` determines if the row displays a swatch to the right of the row title showing the currently selected color.
 
 - `showsPaletteNames` determines if color palette names are displayed in the color row.
 
