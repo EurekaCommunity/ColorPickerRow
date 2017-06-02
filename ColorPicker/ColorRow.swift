@@ -42,15 +42,9 @@ public final class ColorCell : Cell<UIColor>, CellType {
         super.setup()
 
         swatchView.color = row.value
-        selectionStyle = .default
+        selectionStyle = .none
         accessoryView = swatchView
     }
-    
-    open override func didSelect() {
-        print("xxx")
-        
-    }
-    
 }
 
 // MARK: MyCustomRow
