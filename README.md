@@ -70,7 +70,8 @@ If you use **ColorPickerRow** in your app I would love to hear about it! Drop me
 
 ## Installation
 
-_CocoaPods support is forthcoming_
+1. Add `pod 'ColorPickerRow', :git => 'https://github.com/EurekaCommunity/ColorPickerRow'` to your Podfile
+2. Run `$ pod install`
 
 ### Manual
 
