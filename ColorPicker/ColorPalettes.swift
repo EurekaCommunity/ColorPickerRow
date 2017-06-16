@@ -34,8 +34,18 @@ public struct ColorPalette {
     }
 }
 
-struct iOS {
-    let palette = ColorPalette(name: "Apple",
+public extension Sequence where Iterator.Element == ColorPalette {
+    public func combined(usingName name: String) -> ColorPalette {
+        var colorSpecs = [ColorSpec]()
+        for colorPalette in self {
+            colorSpecs.append(contentsOf: colorPalette.palette)
+        }
+        return ColorPalette(name: name, palette: colorSpecs)
+    }
+}
+
+public struct iOS {
+    public let palette = ColorPalette(name: "Apple",
                                palette: [ColorSpec(hex: UIColor.black.hexString(), name: "black"),
                                          ColorSpec(hex: UIColor.darkGray.hexString(), name: "dark gray"),
                                          ColorSpec(hex: UIColor.gray.hexString(), name: "gray"),
@@ -52,8 +62,8 @@ struct iOS {
                                          ColorSpec(hex: UIColor.brown.hexString(), name: "brown")])
 }
 
-struct Solarised {
-    let palette = ColorPalette(name: "Solarised",
+public struct Solarised {
+    public let palette = ColorPalette(name: "Solarised",
                                palette: [ColorSpec(hex: "#002b36", name: "base03"),
                                          ColorSpec(hex: "#073642", name: "base02"),
                                          ColorSpec(hex: "#586e75", name: "base01"),
@@ -72,8 +82,8 @@ struct Solarised {
                                          ColorSpec(hex: "#859900", name: "green")])
 }
 
-struct WP8 {
-    let palette = ColorPalette(name: "WP8",
+public struct WP8 {
+    public let palette = ColorPalette(name: "WP8",
                                palette: [ColorSpec(hex: "#A4C400", name: "lime"),
                                          ColorSpec(hex: "#60A917", name: "green"),
                                          ColorSpec(hex: "#008A00", name: "emerald"),
@@ -96,8 +106,8 @@ struct WP8 {
                                          ColorSpec(hex: "#87794E", name: "taupe")])
 }
 
-struct Flat {
-    let palette = ColorPalette(name: "Flat",
+public struct Flat {
+    public let palette = ColorPalette(name: "Flat",
                                palette: [ColorSpec(hex: "#1abc9c", name: "turquoise"),
                                          ColorSpec(hex: "#16a085", name: "greensea"),
                                          ColorSpec(hex: "#2ecc71", name: "emerald"),
@@ -120,8 +130,8 @@ struct Flat {
                                          ColorSpec(hex: "#7f8c8d", name: "asbestos")])
 }
 
-struct Material {
-    let palette = ColorPalette(name: "Material",
+public struct Material {
+    public let palette = ColorPalette(name: "Material",
                                palette: [ColorSpec(hex: "#f44336", name: "red"),
                                          ColorSpec(hex: "#E91E63", name: "pink"),
                                          ColorSpec(hex: "#9C27B0", name: "purple"),
@@ -143,8 +153,8 @@ struct Material {
                                          ColorSpec(hex: "#607D8B", name: "bluegrey")])
 }
 
-struct Metro {
-    let palette = ColorPalette(name: "Metro",
+public struct Metro {
+    public let palette = ColorPalette(name: "Metro",
                                palette: [ColorSpec(hex: "#a4c400", name: "lime"),
                                          ColorSpec(hex: "#60a917", name: "green"),
                                          ColorSpec(hex: "#008a00", name: "emerald"),

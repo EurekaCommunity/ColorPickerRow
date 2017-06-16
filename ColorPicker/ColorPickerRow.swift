@@ -33,12 +33,16 @@ public final class ColorPickerCell : Cell<UIColor>, CellType, UICollectionViewDe
         }
     }
 
-    var palettes : [ColorPalette] = [iOS().palette,
-                                     Solarised().palette,
-                                     WP8().palette,
-                                     Flat().palette,
-                                     Material().palette,
-                                     Metro().palette]
+    public var palettes : [ColorPalette] = [iOS().palette,
+                                            Solarised().palette,
+                                            WP8().palette,
+                                            Flat().palette,
+                                            Material().palette,
+                                            Metro().palette] {
+        didSet {
+            colorsView.reloadData()
+        }
+    }
 
     private var dynamicConstraints = [NSLayoutConstraint]()
     private var notificationObserver : NSObjectProtocol?
@@ -236,21 +240,21 @@ public final class ColorPickerCell : Cell<UIColor>, CellType, UICollectionViewDe
 
 open class _ColorPickerRow: Row<ColorPickerCell> {
     
-    var showsCurrentSwatch = true {
+    open var showsCurrentSwatch = true {
         didSet {
             guard let _ = section?.form else { return }
             updateCell()
         }
     }
     
-    var showsPaletteNames = true {
+    open var showsPaletteNames = true {
         didSet {
             guard let _ = section?.form else { return }
             updateCell()
         }
     }
 
-    var isCircular = false {
+    open var isCircular = false {
         didSet {
             guard let _ = section?.form else { return }
             updateCell()
