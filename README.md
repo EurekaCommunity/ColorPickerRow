@@ -116,3 +116,13 @@ If you use **ColorPickerRow** in your app I would love to hear about it! Drop me
 ## FAQ
 
 nothing yet
+
+## Applications using ColorPickerRow
+
+- [Tennis Cards](https://itunes.apple.com/us/app/tennis-cards/id1212377801?mt=8)
+
+## Other Rows
+
+See my other contributions to the Eureka Community:
+
+- [ViewRow](https://github.com/EurekaCommunity/ViewRow)
