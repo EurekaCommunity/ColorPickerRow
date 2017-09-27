@@ -74,7 +74,7 @@ If you use **ColorPickerRow** in your app I would love to hear about it! Drop me
   
 ~~~~
     pod 'ColorPickerRow', :git => 'https://github.com/EurekaCommunity/ColorPickerRow'  
-    pod 'UIColor_Hex_Swift', '~> 3.0.2'
+    pod 'UIColor_Hex_Swift'
 ~~~~
     
 2. Run `$ pod install`

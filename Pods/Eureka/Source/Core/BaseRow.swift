@@ -35,6 +35,8 @@ open class BaseRow: BaseRowType {
     var callbackOnCellHighlightChanged: (() -> Void)?
     var callbackOnRowValidationChanged: (() -> Void)?
     var _inlineRow: BaseRow?
+    
+    var _cachedOptionsData: Any?
 
     public var validationOptions: ValidationOptions = .validatesOnBlur
     // validation state
@@ -210,6 +212,11 @@ extension BaseRow {
             section?.form?.tagToValues[t] = nil
         }
         removeFromRowObservers()
+    }
+
+    final func willBeRemovedFromSection() {
+        willBeRemovedFromForm()
+        section = nil
     }
 
     final func removeFromHiddenRowObservers() {

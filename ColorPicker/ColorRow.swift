@@ -49,7 +49,7 @@ public final class ColorCell : Cell<UIColor>, CellType {
 
 // MARK: MyCustomRow
 
-open class _ColorRow: Row<ColorCell> {
+public class _ColorRow: Row<ColorCell> {
 
     var isCircular = false {
         didSet {

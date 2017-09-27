@@ -238,7 +238,7 @@ public final class ColorPickerCell : Cell<UIColor>, CellType, UICollectionViewDe
 
 // MARK: MyCustomRow
 
-open class _ColorPickerRow: Row<ColorPickerCell> {
+public class _ColorPickerRow: Row<ColorPickerCell> {
     
     open var showsCurrentSwatch = true {
         didSet {
