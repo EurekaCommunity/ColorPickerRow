@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.author = "Mark Alldritt"
   s.dependencies = {
-  	'Eureka', 
-	'UIColor_Hex_Swift'
+  	'Eureka' => '~> 4.0.0', 
+	'UIColor_Hex_Swift' => '~> 3.0.0'
   }
 end
