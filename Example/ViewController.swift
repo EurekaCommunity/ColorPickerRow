@@ -91,8 +91,14 @@ class ViewController: FormViewController {
                     }
                 }
 
-            //  Custom color palette example
             +++ Section("Color Picker Demo II")
+                <<< InlineColorPickerRow("colors3") { (row) in
+                    row.title = "Inline Color Picker"
+                    row.value = UIColor.white
+                }
+
+            //  Custom color palette example
+            +++ Section("Color Picker Demo III")
                 <<< ColorPickerRow("colors2") { (row) in
                     row.title = "Color Picker"
                     row.isCircular = true

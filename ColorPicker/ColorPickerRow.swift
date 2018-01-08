@@ -130,19 +130,29 @@ public final class ColorPickerCell : Cell<UIColor>, CellType, UICollectionViewDe
         frame.size.width += 30
         contentView.frame = frame
     }
+    
     open func customConstraints() {
-        let views : [String: AnyObject] = ["titleLabel" : titleLabel,
-                                           "colorsView": colorsView,
-                                           "swatchView": swatchView]
-
         contentView.removeConstraints(dynamicConstraints)
-
         dynamicConstraints = []
-        dynamicConstraints.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "V:|-6-[titleLabel]-4-[colorsView(100)]|", options: [], metrics: nil, views: views))
-        dynamicConstraints.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "V:|-8-[swatchView(30)]", options: [], metrics: nil, views: views))
-        dynamicConstraints.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "H:|-30-[titleLabel]-[swatchView(30)]-30-|", options: [], metrics: nil, views: views))
-        dynamicConstraints.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "H:|-[colorsView]-|", options: [], metrics: nil, views: views))
-        contentView.addConstraints(dynamicConstraints)
+
+        if (titleLabel.text == "" || titleLabel.text == nil) && swatchView.isHidden {
+            let views : [String: AnyObject] = ["colorsView": colorsView]
+            
+            dynamicConstraints.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "V:|-6-[colorsView(100)]", options: [], metrics: nil, views: views))
+            dynamicConstraints.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "H:|-[colorsView]-|", options: [], metrics: nil, views: views))
+            contentView.addConstraints(dynamicConstraints)
+        }
+        else {
+            let views : [String: AnyObject] = ["titleLabel" : titleLabel,
+                                               "colorsView": colorsView,
+                                               "swatchView": swatchView]
+
+            dynamicConstraints.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "V:|-6-[titleLabel]-4-[colorsView(100)]|", options: [], metrics: nil, views: views))
+            dynamicConstraints.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "V:|-8-[swatchView(30)]", options: [], metrics: nil, views: views))
+            dynamicConstraints.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "H:|-30-[titleLabel]-[swatchView(30)]-30-|", options: [], metrics: nil, views: views))
+            dynamicConstraints.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "H:|-[colorsView]-|", options: [], metrics: nil, views: views))
+            contentView.addConstraints(dynamicConstraints)
+        }
     }
 
 
@@ -236,7 +246,7 @@ public final class ColorPickerCell : Cell<UIColor>, CellType, UICollectionViewDe
     }
 }
 
-// MARK: MyCustomRow
+// MARK: ColorPickerRow
 
 public class _ColorPickerRow: Row<ColorPickerCell> {
     
@@ -263,11 +273,13 @@ public class _ColorPickerRow: Row<ColorPickerCell> {
     
     override open func updateCell() {
         cell.titleLabel.text = title
-        cell.height = { return CGFloat(145) }
         cell.isCircular = isCircular
         cell.showsPaletteNames = showsPaletteNames
         cell.swatchView.isHidden = !showsCurrentSwatch
         
+        let rowHeight = showsCurrentSwatch || title?.count ?? 0 > 0 ? CGFloat(145) : CGFloat(107)
+        cell.height = { return rowHeight }
+
         if value != cell.swatchView.color {
             cell.swatchView.color = value
         
