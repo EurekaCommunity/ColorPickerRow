@@ -42,7 +42,7 @@ public final class InlineColorPickerCell : Cell<UIColor>, CellType {
         super.setup()
         
         swatchView.color = row.value
-        selectionStyle = .none
+        selectionStyle = .default
         accessoryView = swatchView
     }
 }
@@ -94,11 +94,10 @@ public final class InlineColorPickerRow: _InlineColorPickerRow, RowType, InlineR
     required public init(tag: String?) {
         super.init(tag: tag)
         onExpandInlineRow { cell, row, _ in
-            let color = cell.detailTextLabel?.textColor
-            row.onCollapseInlineRow { cell, _, _ in
-                cell.detailTextLabel?.textColor = color
-            }
-            cell.detailTextLabel?.textColor = cell.tintColor
+            row.deselect()
+        }
+        onCollapseInlineRow { cell, row, _ in
+            row.deselect()
         }
     }
     
