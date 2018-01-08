@@ -6,7 +6,7 @@ ColorPickerRow is a [Eureka](https://github.com/xmartlabs/Eureka) custom row tha
 
 ![Demo](Screenshots/ColorPicker.gif)
 
-## ColorPickerRow Usage
+## ColorPickerRow & InlineColorPickerRow Usage
 
 ```swift
 import Eureka
@@ -104,6 +104,14 @@ If you use **ColorPickerRow** in your app I would love to hear about it! Drop me
                     cell.palettes = [palette]
                 }
 ```
+
+## InlineColorPickerRow Customization
+
+- `isCircular` allows you to choose between circular and rounded square color swatches.
+
+- `showsCurrentSwatch` determines if the row displays a swatch to the right of the row title showing the currently selected color.
+
+- `showsPaletteNames` determines if color palette names are displayed in the color row.
 
 ## ColorRow Customization
 
