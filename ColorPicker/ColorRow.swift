@@ -47,7 +47,7 @@ public final class ColorCell : Cell<UIColor>, CellType {
     }
 }
 
-// MARK: MyCustomRow
+// MARK: ColorRow
 
 public class _ColorRow: Row<ColorCell> {
 
