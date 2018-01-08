@@ -1,15 +1,15 @@
 PODS:
-  - Eureka (4.0.0)
-  - UIColor_Hex_Swift (3.0.2)
+  - Eureka (4.0.1)
+  - UIColor_Hex_Swift (4.0.1)
 
 DEPENDENCIES:
-  - Eureka (~> 4.0.0)
+  - Eureka (>= 4.0.0)
   - UIColor_Hex_Swift
 
 SPEC CHECKSUMS:
-  Eureka: c0b55d2aec82050c1400c7d65960b700be8d10ef
-  UIColor_Hex_Swift: 95f718452092a3efc8a827dffd2c04d3237be02d
+  Eureka: c8bd5cc07143b6f66268c208d28a246c99b41955
+  UIColor_Hex_Swift: c5ff88470499383b8fd85302d59344bb24ba9436
 
-PODFILE CHECKSUM: 309386d4cd991af5cee3f3de160a3338b893ff73
+PODFILE CHECKSUM: 118eac6f74e47cc80838c661be9361037b459f8e
 
 COCOAPODS: 1.3.1
