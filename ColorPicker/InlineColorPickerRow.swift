@@ -51,7 +51,7 @@ public final class InlineColorPickerCell : Cell<UIColor>, CellType {
 
 public class _InlineColorPickerRow: Row<InlineColorPickerCell> {
     
-    var isCircular = false {
+    open var isCircular = false {
         didSet {
             guard let _ = section?.form else { return }
             updateCell()
