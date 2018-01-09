@@ -65,6 +65,13 @@ public class _InlineColorPickerRow: Row<InlineColorPickerCell> {
         }
     }
 
+    open var palettes : [ColorPalette] = [iOS().palette,
+                                            Solarised().palette,
+                                            WP8().palette,
+                                            Flat().palette,
+                                            Material().palette,
+                                            Metro().palette]
+
     override open func updateCell() {
         super.updateCell()
         cell.isCircular = isCircular
@@ -82,6 +89,7 @@ public final class InlineColorPickerRow: _InlineColorPickerRow, RowType, InlineR
         inlineRow.value = value
         inlineRow.isCircular = isCircular
         inlineRow.showsCurrentSwatch = false
+        inlineRow.cell.palettes = palettes
         inlineRow.showsPaletteNames = showsPaletteNames
 
         if value != nil, let indexPath = inlineRow.cell.indexPath(forColor: value!) {
