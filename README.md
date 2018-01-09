@@ -1,5 +1,9 @@
 By [Mark Alldritt](http://markalldritt.com).
 
+## NEW
+
+Added a new inline color picker row (inlineCOLORpickerow) for version 1.2.
+
 ## Introduction
 
 ColorPickerRow is a [Eureka](https://github.com/xmartlabs/Eureka) custom row that allows you to choose colors.  ColorRow lets you display a color in a row.
