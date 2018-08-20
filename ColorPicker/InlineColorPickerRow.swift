@@ -76,6 +76,7 @@ public class _InlineColorPickerRow: Row<InlineColorPickerCell> {
         super.updateCell()
         cell.isCircular = isCircular
         cell.swatchView.color = value
+        cell.selectionStyle = isDisabled ? .none : .default
     }
     
     required public init(tag: String?) {
