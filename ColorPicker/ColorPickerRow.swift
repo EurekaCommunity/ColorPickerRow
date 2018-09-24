@@ -276,7 +276,6 @@ public class _ColorPickerRow: Row<ColorPickerCell> {
         cell.isCircular = isCircular
         cell.showsPaletteNames = showsPaletteNames
         cell.swatchView.isHidden = !showsCurrentSwatch
-        cell.selectionStyle = isDisabled ? .none : .default
 
         let rowHeight = showsCurrentSwatch || title?.count ?? 0 > 0 ? CGFloat(145) : CGFloat(107)
         cell.height = { return rowHeight }
