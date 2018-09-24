@@ -1,4 +1,5 @@
-//  LabelRow.swift
+//
+//  AlertOptionsRow.swift
 //  Eureka ( https://github.com/xmartlabs/Eureka )
 //
 //  Copyright (c) 2016 Xmartlabs SRL ( http://xmartlabs.com )
@@ -24,37 +25,17 @@
 
 import Foundation
 
-// MARK: LabelCell
 
-open class LabelCellOf<T: Equatable>: Cell<T>, CellType {
+import Foundation
 
-    required public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-    }
+open class AlertOptionsRow<Cell: CellType> : OptionsRow<Cell>, AlertOptionsProviderRow where Cell: BaseCell {
 
-    required public init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
+    typealias OptionsProviderType = OptionsProvider<Cell.Value>
 
-    open override func setup() {
-        super.setup()
-        selectionStyle = .none
-    }
-}
+    open var cancelTitle: String?
 
-public typealias LabelCell = LabelCellOf<String>
-
-// MARK: LabelRow
-
-open class _LabelRow: Row<LabelCell> {
     required public init(tag: String?) {
         super.init(tag: tag)
     }
-}
 
-/// Simple row that can show title and value but is not editable by user.
-public final class LabelRow: _LabelRow, RowType {
-    required public init(tag: String?) {
-        super.init(tag: tag)
-    }
 }

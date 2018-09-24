@@ -130,7 +130,6 @@
 				A56E45521DF6534B0094372A /* Frameworks */,
 				A56E45531DF6534B0094372A /* Resources */,
 				3C5D0A7B404965B7DC14EF9C /* [CP] Embed Pods Frameworks */,
-				856E17999DAA8B7175C21D8C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,21 +207,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ColorPicker/Pods-ColorPicker-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		856E17999DAA8B7175C21D8C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ColorPicker/Pods-ColorPicker-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		917E84A55E4B0F85EA3701B0 /* [CP] Check Pods Manifest.lock */ = {
