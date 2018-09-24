@@ -47,7 +47,7 @@ public final class ColorPickerCell : Cell<UIColor>, CellType, UICollectionViewDe
     private var dynamicConstraints = [NSLayoutConstraint]()
     private var notificationObserver : NSObjectProtocol?
 
-    required public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    required public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 0, left: 5, bottom: 6, right: 10)
         layout.itemSize = CGSize(width: 30, height: 30)
@@ -73,7 +73,7 @@ public final class ColorPickerCell : Cell<UIColor>, CellType, UICollectionViewDe
         colorsView.showsHorizontalScrollIndicator = true
         colorsView.showsVerticalScrollIndicator = false
         colorsView.register(ColorSwatchCell.self, forCellWithReuseIdentifier: "swatch")
-        colorsView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "header")
+        colorsView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "header")
         colorsView.delegate = self
         colorsView.dataSource = self
     }
@@ -88,11 +88,11 @@ public final class ColorPickerCell : Cell<UIColor>, CellType, UICollectionViewDe
         }
     }
     
-    open override func update() {
+    public override func update() {
         super.update()
     }
     
-    open override func setup() {
+    public override func setup() {
         super.setup()
 
         selectionStyle = .none
@@ -104,7 +104,7 @@ public final class ColorPickerCell : Cell<UIColor>, CellType, UICollectionViewDe
         
         setNeedsUpdateConstraints()
         
-        notificationObserver = NotificationCenter.default.addObserver(forName: NSNotification.Name.UIContentSizeCategoryDidChange,
+        notificationObserver = NotificationCenter.default.addObserver(forName: UIContentSizeCategory.didChangeNotification,
                                                                       object: nil,
                                                                       queue: nil,
                                                                       using: { [weak self] (note) in
@@ -113,16 +113,16 @@ public final class ColorPickerCell : Cell<UIColor>, CellType, UICollectionViewDe
         })
     }
     
-    open override func didSelect() {
+    public override func didSelect() {
 
     }
     
-    open override func updateConstraints(){
+    public override func updateConstraints(){
         customConstraints()
         super.updateConstraints()
     }
 
-    open override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         
         var frame = contentView.frame
@@ -131,7 +131,7 @@ public final class ColorPickerCell : Cell<UIColor>, CellType, UICollectionViewDe
         contentView.frame = frame
     }
     
-    open func customConstraints() {
+    public func customConstraints() {
         contentView.removeConstraints(dynamicConstraints)
         dynamicConstraints = []
 
@@ -220,7 +220,7 @@ public final class ColorPickerCell : Cell<UIColor>, CellType, UICollectionViewDe
     }
     
     public func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let v = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "header", for: indexPath)
+        let v = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "header", for: indexPath)
         
         if v.subviews.count == 0 {
             let label = UILabel(frame: CGRect(x: -36.0, y: 40.0, width: 96.0, height: 16.0))

@@ -21,7 +21,7 @@ public final class ColorCell : Cell<UIColor>, CellType {
     
     private var dynamicConstraints = [NSLayoutConstraint]()
 
-    required public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    required public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         swatchView = ColorSwatchView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
         
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -34,11 +34,11 @@ public final class ColorCell : Cell<UIColor>, CellType {
         fatalError("init(coder:) has not been implemented")
     }
     
-    open override func update() {
+    public override func update() {
         super.update()
     }
     
-    open override func setup() {
+    public override func setup() {
         super.setup()
 
         swatchView.color = row.value
