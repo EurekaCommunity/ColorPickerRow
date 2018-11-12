@@ -39,7 +39,7 @@ extension UIColor {
 }
 
 
-class ColorSwatchView : UIView {
+public class ColorSwatchView : UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = UIColor.clear
@@ -50,23 +50,23 @@ class ColorSwatchView : UIView {
         backgroundColor = UIColor.clear
     }
     
-    var isCircular = false {
+    public var isCircular = false {
         didSet {
             setNeedsDisplay()
         }
     }
-    var color : UIColor? {
+    public var color : UIColor? {
         didSet {
             setNeedsDisplay()
         }
     }
-    var isSelected = false {
+    public var isSelected = false {
         didSet {
             setNeedsDisplay()
         }
     }
     
-    override func draw(_ rect: CGRect) {
+    override public func draw(_ rect: CGRect) {
         if let color = color {
             let swatchRect = bounds.insetBy(dx: 1.0, dy: 1.0)
             let path = isCircular ? UIBezierPath(ovalIn: swatchRect) : UIBezierPath(roundedRect: swatchRect, cornerRadius: CGFloat(Int(swatchRect.width * 0.2)))

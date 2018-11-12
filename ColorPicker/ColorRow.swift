@@ -12,8 +12,8 @@ import Eureka
 
 public final class ColorCell : Cell<UIColor>, CellType {
     
-    var swatchView : ColorSwatchView
-    var isCircular = false {
+    public var swatchView : ColorSwatchView
+    public var isCircular = false {
         didSet {
             swatchView.isCircular = isCircular
         }

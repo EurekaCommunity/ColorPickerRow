@@ -107,6 +107,7 @@ class ViewController: FormViewController {
                     row.value = UIColor.white
                 }
                 .cellSetup { (cell, row) in
+                    cell.titleLabel.textColor = .blue
                     let palette = ColorPalette(name: "All",
                                                palette: [ColorSpec(hex: "#ffffff", name: ""),
                                                          ColorSpec(hex: "#e2e2e2", name: ""),
