@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary = 'A color picker row for use with the Eureka form library'
   s.homepage = 'https://github.com/EurekaCommunity/ColorPickerRow'
   s.source = { :git => 'https://github.com/EurekaCommunity/ColorPickerRow.git' }
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.3'
   s.ios.frameworks = 'UIKit', 'Foundation'
   s.source_files = 'ColorPicker/**/*.swift'
   s.swift_version = '4.2'
