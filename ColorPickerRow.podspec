@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/EurekaCommunity/ColorPickerRow'
   s.source = { :git => 'https://github.com/EurekaCommunity/ColorPickerRow.git', :tag => s.version.to_s }
   s.ios.deployment_target = '9.3'
-  s.ios.frameworks = 'UIKit', 'Foundation'
+  s.ios.frameworks = 'UIKit'
   s.source_files = 'ColorPicker/**/*.swift'
   s.swift_version = '5.0'
   s.requires_arc = true
