@@ -78,7 +78,6 @@ If you use **ColorPickerRow** in your app I would love to hear about it! Drop me
   
 ~~~~
     pod 'ColorPickerRow'  
-    pod 'UIColor_Hex_Swift'
 ~~~~
     
 2. Run `$ pod install`
