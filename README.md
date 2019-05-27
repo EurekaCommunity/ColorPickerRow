@@ -2,7 +2,7 @@ By [Mark Alldritt](http://markalldritt.com).
 
 ## NEW
 
-Added a new inline color picker row (inlineCOLORpickerow) for version 1.2.
+Added a new inline color picker row (inlineColorPickeRow) for version 1.2.
 
 ## Introduction
 
