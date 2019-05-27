@@ -27,6 +27,9 @@
 		6DD245E5A741E2B211F62744 /* Pods-EurekaCustomView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EurekaCustomView.release.xcconfig"; path = "Pods/Target Support Files/Pods-EurekaCustomView/Pods-EurekaCustomView.release.xcconfig"; sourceTree = "<group>"; };
 		7CEB6EA7CFD8AAB9E2AC93A8 /* Pods_ColorPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8916CE07984B740D71338DE5 /* Pods-EurekaCustomView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EurekaCustomView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EurekaCustomView/Pods-EurekaCustomView.debug.xcconfig"; sourceTree = "<group>"; };
+		A52DF22E229C729C00F24069 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A52DF22F229C729C00F24069 /* ColorPickerRow.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ColorPickerRow.podspec; sourceTree = "<group>"; };
+		A52DF230229C729C00F24069 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A55A52441EA8691000FDEE06 /* ColorPalettes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalettes.swift; sourceTree = "<group>"; };
 		A55A52461EA8698000FDEE06 /* ColorSwatchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSwatchCell.swift; sourceTree = "<group>"; };
 		A56E45551DF6534B0094372A /* ColorPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +68,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A52DF22D229C726A00F24069 /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				A52DF22F229C729C00F24069 /* ColorPickerRow.podspec */,
+				A52DF22E229C729C00F24069 /* README.md */,
+				A52DF230229C729C00F24069 /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
 		A55B414F1EAC0D2B001D90D5 /* ColorPicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,7 @@
 		A56E454C1DF6534B0094372A = {
 			isa = PBXGroup;
 			children = (
+				A52DF22D229C726A00F24069 /* Podspec Metadata */,
 				A56E45571DF6534B0094372A /* Example */,
 				A55B414F1EAC0D2B001D90D5 /* ColorPicker */,
 				A56E45561DF6534B0094372A /* Products */,
@@ -147,7 +161,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Late Night Software Ltd.";
 				TargetAttributes = {
 					A56E45541DF6534B0094372A = {
@@ -162,6 +176,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -195,7 +210,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ColorPicker/Pods-ColorPicker-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ColorPicker/Pods-ColorPicker-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/UIColor_Hex_Swift/UIColor_Hex_Swift.framework",
 			);
@@ -206,7 +221,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ColorPicker/Pods-ColorPicker-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ColorPicker/Pods-ColorPicker-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		917E84A55E4B0F85EA3701B0 /* [CP] Check Pods Manifest.lock */ = {
@@ -271,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -331,6 +347,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
