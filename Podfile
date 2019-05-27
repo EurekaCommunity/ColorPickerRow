@@ -4,7 +4,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'ColorPicker' do
   use_frameworks!
 
-  pod 'Eureka', '>= 4.3.0'
+  pod 'Eureka', '>= 5.0'
   pod 'UIColor_Hex_Swift'
   
 end
