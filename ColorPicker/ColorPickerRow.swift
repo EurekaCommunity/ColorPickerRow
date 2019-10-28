@@ -227,10 +227,15 @@ public final class ColorPickerCell : Cell<UIColor>, CellType, UICollectionViewDe
             
             label.font = UIFont.systemFont(ofSize: 11.0)
             label.textAlignment = .center
-            label.backgroundColor = UIColor.clear
-            label.textColor = UIColor.black
+            if #available(iOS 13.0, *) {
+                label.textColor = UIColor.label
+                label.backgroundColor = UIColor.systemGroupedBackground
+
+            } else {
+                label.textColor = UIColor.black
+                label.backgroundColor = UIColor.init(white: 0.9, alpha: 1.0)
+            }
             label.transform = CGAffineTransform(rotationAngle: (-90.0 * CGFloat.pi) / 180.0)
-            label.backgroundColor = UIColor.init(white: 0.9, alpha: 1.0)
             label.layer.masksToBounds = true
             label.layer.cornerRadius = 8.0
             label.tag = 1234
