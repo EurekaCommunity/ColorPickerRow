@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'ColorPickerRow'
-  s.version = '1.3.2'
+  s.version = '1.3.3'
   s.license = 'MIT'
   s.summary = 'A color picker row for use with the Eureka form library'
   s.homepage = 'https://github.com/EurekaCommunity/ColorPickerRow'
