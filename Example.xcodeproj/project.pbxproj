@@ -32,7 +32,7 @@
 		A52DF230229C729C00F24069 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A55A52441EA8691000FDEE06 /* ColorPalettes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalettes.swift; sourceTree = "<group>"; };
 		A55A52461EA8698000FDEE06 /* ColorSwatchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSwatchCell.swift; sourceTree = "<group>"; };
-		A56E45551DF6534B0094372A /* ColorPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A56E45551DF6534B0094372A /* EurekaColorPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EurekaColorPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56E45581DF6534B0094372A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A56E455A1DF6534B0094372A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A56E455D1DF6534B0094372A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 		A56E45561DF6534B0094372A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A56E45551DF6534B0094372A /* ColorPicker.app */,
+				A56E45551DF6534B0094372A /* EurekaColorPicker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,9 +135,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A56E45541DF6534B0094372A /* ColorPicker */ = {
+		A56E45541DF6534B0094372A /* Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A56E45671DF6534B0094372A /* Build configuration list for PBXNativeTarget "ColorPicker" */;
+			buildConfigurationList = A56E45671DF6534B0094372A /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
 				917E84A55E4B0F85EA3701B0 /* [CP] Check Pods Manifest.lock */,
 				A56E45511DF6534B0094372A /* Sources */,
@@ -149,9 +149,9 @@
 			);
 			dependencies = (
 			);
-			name = ColorPicker;
+			name = Example;
 			productName = EurekaCustomView;
-			productReference = A56E45551DF6534B0094372A /* ColorPicker.app */;
+			productReference = A56E45551DF6534B0094372A /* EurekaColorPicker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -167,7 +167,7 @@
 					A56E45541DF6534B0094372A = {
 						CreatedOnToolsVersion = 8.1;
 						LastSwiftMigration = 1000;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -185,7 +185,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A56E45541DF6534B0094372A /* ColorPicker */,
+				A56E45541DF6534B0094372A /* Example */,
 			);
 		};
 /* End PBXProject section */
@@ -403,14 +403,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.latenightsw.EurekaCustomView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = EurekaColorPicker;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
@@ -421,14 +422,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.latenightsw.EurekaCustomView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = EurekaColorPicker;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
@@ -445,7 +447,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A56E45671DF6534B0094372A /* Build configuration list for PBXNativeTarget "ColorPicker" */ = {
+		A56E45671DF6534B0094372A /* Build configuration list for PBXNativeTarget "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A56E45681DF6534B0094372A /* Debug */,
