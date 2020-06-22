@@ -60,6 +60,7 @@ public final class ColorPickerCell : Cell<UIColor>, CellType, UICollectionViewDe
         titleLabel = UILabel()
         swatchView = ColorSwatchView()
         colorsView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
+        colorsView.contentInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
         
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
