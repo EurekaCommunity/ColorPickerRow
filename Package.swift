@@ -12,11 +12,12 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/xmartlabs/Eureka.git", from: "5.3.2"),
+        .package(name: "UIColor_Hex_Swift", url: "https://github.com/yeahdongcn/UIColor-Hex-Swift.git", from: "5.0.0")
     ],
     targets: [
         .target(
             name: "ColorPickerRow",
-            dependencies: [],
-            path: "ColorPickerRow"),
+            dependencies: ["Eureka", "UIColor_Hex_Swift"],
+            path: "ColorPicker"),
     ]
 )

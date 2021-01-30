@@ -9,7 +9,7 @@
 import UIKit
 
 
-class ColorSwatchCell: UICollectionViewCell {
+public class ColorSwatchCell: UICollectionViewCell {
     var swatchView : ColorSwatchView
     
     override init(frame: CGRect) {
@@ -24,13 +24,13 @@ class ColorSwatchCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    var colorSpec : ColorSpec? {
+    public var colorSpec : ColorSpec? {
         didSet {
             swatchView.color = colorSpec?.color
         }
     }
     
-    override var isSelected: Bool {
+    public override var isSelected: Bool {
         didSet {
             swatchView.isSelected = isSelected
         }
