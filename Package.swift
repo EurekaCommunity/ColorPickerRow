@@ -12,7 +12,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/xmartlabs/Eureka.git", from: "5.3.2"),
-        .package(name: "UIColorHexSwift", url: "https://github.com/yeahdongcn/UIColor-Hex-Swift.git", from: "5.0.0")
+        .package(name: "UIColorHexSwift", url: "https://github.com/yeahdongcn/UIColor-Hex-Swift.git", from: "5.1.0")
     ],
     targets: [
         .target(
