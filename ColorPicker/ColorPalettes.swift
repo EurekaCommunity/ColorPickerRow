@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import UIColor_Hex_Swift
+import UIColorHexSwift
 
 
 public struct ColorSpec {
